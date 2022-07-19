@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>클린코드 on 종욱의 개발 블로그</title><link>https://jeonjongyook.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/</link><description>Recent content in 클린코드 on 종욱의 개발 블로그</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jeonjongyook.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>클린코드 제 1장</title><link>https://jeonjongyook.github.io/p/cleancode/</link><pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate><guid>https://jeonjongyook.github.io/p/cleancode/</guid><description>&lt;hr>
+&lt;h2 id="클린코드란-무엇인가">클린코드란 무엇인가?&lt;/h2>
+&lt;p>-&amp;gt; 읽기 쉬운 코드가 클린코드이다.&lt;/p>
+&lt;blockquote>
+&lt;p>C++의 창시자인 Bjarne Stroustrup은 클린코드를 다음과 같이 정의하였다.&lt;/p>
+&lt;p>코드가 우아하다는 의미는 군더더기 없이 깔끔하다는 의미이고,&lt;/p>
+&lt;p>효과적이라는 것은 기능을 수행하는 코드를 최대한 작은 라인으로 구현한다.&lt;/p>
+&lt;/blockquote>
+&lt;p>이처럼 클린코드는 프로그래머가 기한을 맞추기 위해 양산하는 나쁜 코드가 아니라
+코드를 최대한 깨끗하게 유지하여 사람도 읽기 쉽고 고치기도 쉬운 그런 코드를 말하게 된다.&lt;/p></description></item></channel></rss>

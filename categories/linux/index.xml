@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on 종욱의 개발 블로그</title><link>https://jeonjongyook.github.io/categories/linux/</link><description>Recent content in Linux on 종욱의 개발 블로그</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 19 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jeonjongyook.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux공부 제 2장</title><link>https://jeonjongyook.github.io/p/start-linux2/</link><pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate><guid>https://jeonjongyook.github.io/p/start-linux2/</guid><description>&lt;hr>
+&lt;h3 id="linuxubuntu-공식-홈페이지-접속">Linux(Ubuntu) 공식 홈페이지 접속&lt;/h3>
+&lt;p>부팅 시 필요한 USB 준비(16GB이상) 빠른 포맷으로 포맷&lt;/p>
+&lt;h3 id="우분투-사이트에서-설치용-iso-파일을-다운로드">우분투 사이트에서 설치용 iso 파일을 다운로드&lt;/h3>
+&lt;p>&lt;a class="link" href="https://ubuntu.com/#download" target="_blank" rel="noopener"
+>사이트 URL&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://jeonjongyook.github.io/p/start-linux2/homepage.png"
+width="254"
+height="203"
+srcset="https://jeonjongyook.github.io/p/start-linux2/homepage_hu4d0207d2b3583a334742276f2d174a0c_5944_480x0_resize_box_3.png 480w, https://jeonjongyook.github.io/p/start-linux2/homepage_hu4d0207d2b3583a334742276f2d174a0c_5944_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="참고 사진"
+class="gallery-image"
+data-flex-grow="125"
+data-flex-basis="300px"
+>&lt;/p>
+&lt;p>2022년 7월 19일 기준&lt;/p>
+&lt;p>다운로드 파일 정보 : 3.4G&lt;/p>
+&lt;h3 id="usb-installer를-다운로드한-후-설치-파일을-실행">USB installer를 다운로드한 후 설치 파일을 실행&lt;/h3>
+&lt;p>&lt;a class="link" href="https://universal-usb-installer.kr.uptodown.com/windows/download" target="_blank" rel="noopener"
+>사이트 URL&lt;/a>
+&lt;img src="https://jeonjongyook.github.io/p/start-linux2/homepage2.png"
+width="763"
+height="553"
+srcset="https://jeonjongyook.github.io/p/start-linux2/homepage2_hu063150f5ecc6a24890033b5b3fe67f44_213624_480x0_resize_box_3.png 480w, https://jeonjongyook.github.io/p/start-linux2/homepage2_hu063150f5ecc6a24890033b5b3fe67f44_213624_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="참고 사진"
+class="gallery-image"
+data-flex-grow="137"
+data-flex-basis="331px"
+>&lt;/p>
+&lt;h3 id="리눅스-설치할-디스크-드라이브-구성-및-용량-할당">리눅스 설치할 디스크 드라이브 구성 및 용량 할당&lt;/h3>
+&lt;blockquote>
+&lt;ol>
+&lt;li>제어판으로 가서 시스템 및 보안 - 관리 도구 하드 디스크 파티션 만들기 및 포맷을 클릭&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>용도에 따라서 다를 수 있겠지만 해당 OS를 전문적인 서버용으로 사용할 생각이 없다면 기존 C드라이브에 할당된 60기가 정도를 할당하여 리눅스용 디스크로 사용해도 무방함 (최소 요구사항은 만족)&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>기존 C드라이브를 선택 후 마우스 오른쪽을 클릭하면 볼륨 축소 메뉴 클릭&lt;/li>
+&lt;li>축소할 공간 입력 란에 60GB(60000) 입력&lt;/li>
+&lt;li>Window OS 종료 설정 및 BIOS 설정 에서 Secure Boot 옵션 변경하기&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>제어판 &amp;gt; 하드웨어 및 소리 &amp;gt; 전원 옵션 &amp;gt; 시스템 설정&lt;/li>
+&lt;li>빠른 시작 켜기 해제 (OFF)&lt;/li>
+&lt;/ul>
+&lt;ol start="5">
+&lt;li>Window 다시 시작 후 F2 연타 ( PC별로 다를 수 있음 )&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Security -&amp;gt; Secure Boot Configuration&lt;/li>
+&lt;li>Secure Boot Option 을 Disabled로 변경&lt;/li>
+&lt;/ul>
+&lt;ol start="6">
+&lt;li>재시작 후 BIOS 메뉴에서 부팅 우선순위 바꾸기&lt;/li>
+&lt;li>BIOS 메뉴에서 리눅스 OS 설치용 USB가 우선순위 1로 되도록 우선순위 변경 후 저장&lt;/li>
+&lt;li>Install Ubuntu 클릭 및 언어 선택란에 한국어 클릭&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;p>&lt;a class="link" href="https://dreamdeveloper403.tistory.com/28?category=824174" target="_blank" rel="noopener"
+>참고링크&lt;/a>&lt;/p></description></item><item><title>Linux공부 제 3장</title><link>https://jeonjongyook.github.io/p/start-linux3/</link><pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate><guid>https://jeonjongyook.github.io/p/start-linux3/</guid><description>&lt;hr>
+&lt;h3 id="파일-관련-명령어">파일 관련 명령어&lt;/h3>
+&lt;h4 id="빈-파일-생성">빈 파일 생성&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">touch &lt;span class="o">[&lt;/span> 파일명 &lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="파일-삭제">파일 삭제&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">rm &lt;span class="o">[&lt;/span> 파일명 &lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="파일-복사">파일 복사&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">cp &lt;span class="o">[&lt;/span>파일경로 및 파일이름&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>원하는 경로 및 파일이름&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="파일-이동-이름-변경시에도-사용">파일 이동 (이름 변경시에도 사용)&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">mv &lt;span class="o">[&lt;/span>파일경로 및 파일이름&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>원하는 경로 및 파일이름&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mv &lt;span class="o">[&lt;/span>원래 파일 이름&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>원하는 파일 이름&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="파일-생성-및-기존-파일-수정nano-editor">파일 생성 및 기존 파일 수정(nano Editor)&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">nano &lt;span class="o">[&lt;/span>파일명&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="파일-내용-보기">파일 내용 보기&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">cat &lt;span class="o">[&lt;/span>파일명&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="파일-위치-검색">파일 위치 검색&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">locate *.&lt;span class="o">[&lt;/span>확장자명&lt;span class="o">]&lt;/span> : &lt;span class="o">[&lt;/span>확장자명&lt;span class="o">]&lt;/span>을 가진 파일 찾기 - 디렉토리가 아닌 데이터베이스에서 찾는다.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">find . *.&lt;span class="o">[&lt;/span>확장자명&lt;span class="o">]&lt;/span> : &lt;span class="o">[&lt;/span>확장자명&lt;span class="o">]&lt;/span>을 가진 파일 찾기 - 디렉토리에서 찾는다.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">whereis ls : 실행파일 위치 찾기
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">whereis rm : 실행파일 위치 찾기
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="현재-경로-확인">현재 경로 확인&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">pwd&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="명령창-내용-삭제">명령창 내용 삭제&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">clear
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="명령어-도움말-확인">명령어 도움말 확인&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>명령어&lt;span class="o">]&lt;/span> --help
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">man &lt;span class="o">[&lt;/span>명령어&lt;span class="o">]&lt;/span> :/&lt;span class="o">[&lt;/span>찾고싶은단어&lt;span class="o">]&lt;/span> 까지 옵션을 사용해서 특정 단어 찾기 가능, 그 상태를 유지한 상태로 n을 누르면 n이 들어간 단어 찾기 실행
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="패키지-매니저">패키지 매니저&lt;/h3>
+&lt;h4 id="패키지-목록-업데이트">패키지 목록 업데이트&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-get update
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="패키지-찾기">패키지 찾기&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-cache search &lt;span class="o">[&lt;/span>패키지명&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="패키지-설치">패키지 설치&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-get install &lt;span class="o">[&lt;/span>패키지명&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="패키지-업그레이드">패키지 업그레이드&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-get upgrade : 패키지 목록에 있는 모든 패키지 업데이트
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">apt-get upgrade &lt;span class="o">[&lt;/span>패키지명&lt;span class="o">]&lt;/span> : 특정 &lt;span class="o">[&lt;/span>패키지명&lt;span class="o">]&lt;/span>만 업데이트
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="패키지-삭제">패키지 삭제&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">apt-get remove &lt;span class="o">[&lt;/span>패키지명&lt;span class="o">]&lt;/span> : 특정 &lt;span class="o">[&lt;/span>패키지명&lt;span class="o">]&lt;/span> 삭제
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="다운로드">다운로드&lt;/h3>
+&lt;h4 id="파일-다운로드-wget-사용">파일 다운로드 (wget 사용)&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">wget -0 &lt;span class="o">[&lt;/span>저장할 파일명&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>다운로드 url&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-1">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-2">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-3">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-4">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-5">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-6">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-7">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-8">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-9">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="heading-10">&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Linux공부 제 1장</title><link>https://jeonjongyook.github.io/p/start-linux/</link><pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate><guid>https://jeonjongyook.github.io/p/start-linux/</guid><description>&lt;hr>
+&lt;h2 id="linux">Linux&lt;/h2>
+&lt;p>리눅스(Linux)는 컴퓨터 운영체제의 한 종류이자, 커널 자체를 의미합니다.&lt;/p>
+&lt;h3 id="특징">특징&lt;/h3>
+&lt;ol>
+&lt;li>소스 코드가 공개되어있는 ‘자유 소프트웨어’와 ‘오픈 소스 개발’의 가장 유명한 표본&lt;/li>
+&lt;li>다중 사용자, 다중 작업(멀티 태스킹), 다중 스레드를 지원하는 네트워크 운영 체제(NOS)로, 여러 사람이 하나의 리눅스 시스템에 접속하여 다수의 프로그램을 동시에 실행할 수 있다.&lt;/li>
+&lt;/ol>
+&lt;h3 id="사용-가능한-개발-언어와-database">사용 가능한 개발 언어와 Database&lt;/h3>
+&lt;blockquote>
+&lt;p>Language&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/C%2B%2B" target="_blank" rel="noopener"
+>C++&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94_%28%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4%29" target="_blank" rel="noopener"
+>Java&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://en.wikipedia.org/wiki/Perl" target="_blank" rel="noopener"
+>Perl&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener"
+>PHP&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://en.wikipedia.org/wiki/Python" target="_blank" rel="noopener"
+>Python&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.ruby-lang.org/ko/about/" target="_blank" rel="noopener"
+>Ruby&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.lua.org/start.html" target="_blank" rel="noopener"
+>Lua&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/Go_%28%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4%29" target="_blank" rel="noopener"
+>Go&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>DataBase - DBMS&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/%EC%98%A4%EB%9D%BC%ED%81%B4_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4" target="_blank" rel="noopener"
+>Oracle&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/MySQL" target="_blank" rel="noopener"
+>MySQL&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/MariaDB" target="_blank" rel="noopener"
+>MariaDB&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/PostgreSQL" target="_blank" rel="noopener"
+>PostgresSQL&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/CUBRID" target="_blank" rel="noopener"
+>CUBRID&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%96%B4%EB%B2%84%EB%93%9C_%28%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%29" target="_blank" rel="noopener"
+>Firebird&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
